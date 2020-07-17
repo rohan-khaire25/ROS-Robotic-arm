@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find robotic_arm)/launch/simple_arm.launch"/>
+    <include file="$(find moveit_arm)/launch/move_group.launch"/>
+    <include file="$(find moveit_arm)/launch/moveit_rviz.launch">
+        <arg name="rviz_config" value="True"/>    
+    </include>
+
+</launch>
